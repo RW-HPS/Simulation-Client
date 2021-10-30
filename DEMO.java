@@ -282,5 +282,15 @@ static class IoOutputStream {
         this.stream.writeUTF(val);
     }
 }
+	
+static class Packet {
+  public byte[] bytes;
+  
+  public int type;
+  
+  public Packet(int paramInt) {
+    this.type = paramInt;
+  }
+}
 
 }
